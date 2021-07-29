@@ -9,6 +9,15 @@ void main() {
   // dart string interpolation is like python interpolation
   String welcomeMsg = "Hello $fName $lName name length = ${fName.length + lName.length}";
 
-  print(name);
-  print(welcomeMsg);
+  // print(name);
+  // print(welcomeMsg);
+
+  // constants
+  var firstName = "Ahmed";
+  firstName = "Ali";
+  print(firstName);
+
+  const lastName = "Freddy";
+  final newname = "Myercorry";
+
 }
