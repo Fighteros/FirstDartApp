@@ -9,8 +9,10 @@ void main() {
   // printNames("Ahmed", "Ali", "Omar");
   // printNames("Ahmed", "Ali");
 
-  int finalCalc = calculateXYZ(z: 45, y: 43, x: 23);
-  print(finalCalc);
+  // int finalCalc = calculateXYZ(z: 45, y: 43, x: 23);
+  // print(finalCalc);
+  int calcs = calcXYZ(8, 7, z: 5);
+  print(calcs);
 }
 
 void printName(String name) => print("Hello, $name");
@@ -32,8 +34,12 @@ double findLen(int area) => area / 20;
 // [var name] => optional
 void printNames(String n1, String n2, [var n3]) => print("Hello $n1, $n2, $n3");
 
-// named parameters
+// named parameters and optional
 
 int calculateXYZ({required int x, required int y, required int z}) {
   return x * y - z;
 }
+
+// default parameters
+
+int calcXYZ(int x, int y, {int z = 1}) => x * y - z;
