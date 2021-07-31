@@ -1,7 +1,7 @@
 void main() {
   var car = Car();
   car.price = 1000.0;
-  print(car.price);
+  print(car.priceInEuro);
 }
 class Car {
   late String color;
